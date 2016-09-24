@@ -4,10 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="github-ff"
-             fetch="https://github.com/flatfish-fox/" />
-  <remote  name="github-cm"
-             fetch="https://github.com/CyanogenMod/" />
+  <remote  name="github"
+             fetch="https://github.com/" />
   <default revision="refs/tags/android-4.2.2_r1"
            remote="aosp"
            sync-j="4" />
@@ -202,7 +200,6 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="external/busybox" name="android_external_busybox" remote="github-cm" revision="cm-10.1" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
   <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
@@ -213,7 +210,6 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="flatfish-frameworks_native" remote="github-ff" revision="master" groups="device" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
@@ -230,7 +226,6 @@
   <project path="gdk" name="platform/gdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="flatfish-hardware_libhardware" remote="github-ff" revision="master" groups="device" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
@@ -348,4 +343,12 @@
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
 
+  <!-- flatfish repos -->
+  <project path="hardware/libhardware" name="Neo2SHYAlien/flatfish-hardware_libhardware" remote="github" groups="device" />
+  <project path="frameworks/native" name="Neo2SHYAlien/flatfish-frameworks_native" remote="github" groups="device" />
+  <project path="device/allwinner/common" name="Neo2SHYAlien/flatfish-device_allwinner_common" remote="github" revision="master" />
+  <project path="device/allwinner/flatfish" name="Neo2SHYAlien/device-flatfish" remote="github" revision="aosp-4.2.2_r1" />
+
+  <!-- external busybox -->
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-10.1" />
 </manifest>
