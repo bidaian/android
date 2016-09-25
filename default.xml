@@ -344,8 +344,8 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
 
   <!-- flatfish repos -->
-  <project path="hardware/libhardware" name="Neo2SHYAlien/flatfish-hardware_libhardware" remote="github" groups="device" />
-  <project path="frameworks/native" name="Neo2SHYAlien/flatfish-frameworks_native" remote="github" groups="device" />
+  <project path="hardware/libhardware" name="Neo2SHYAlien/flatfish-hardware_libhardware" remote="github" groups="device" revision="android-4.2.2_r1" />
+  <project path="frameworks/native" name="Neo2SHYAlien/flatfish-frameworks_native" remote="github" groups="device" revision="android-4.2.2_r1" />
   <project path="device/allwinner/common" name="Neo2SHYAlien/flatfish-device_allwinner_common" remote="github" revision="master" />
   <project path="device/allwinner/flatfish" name="Neo2SHYAlien/device-flatfish" remote="github" revision="aosp-4.2.2_r1" />
 
